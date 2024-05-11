@@ -13,7 +13,7 @@
  html {
     width: 100vw;
     height: 100vh;
-    font-size: 45%;    
+    font-size: 30%;    
     
     
  }
@@ -22,7 +22,7 @@
 
  .content {
     width: 100vw;
-    height: 40px;
+    height: 20px;
     display: flex; /* todos os itens lado a lado*/
     justify-content: space-around; /* espaço entre os itens*/
     align-items: center;
@@ -36,7 +36,9 @@
     height: 50px;    
     display: flex;
     align-items: center;
+    color: blue;
  } 
+ 
 
  .logo img {
    width: 120px;
@@ -46,8 +48,23 @@
  .content .list-menu {
    width: 600px;
    display: flex; /*deixa tudo  lado a lado */
-   align-items: center;
-   justify-content: left;
+   align-items: center;   
+   gap: 25px;
+   font-size: 6px;
+   font-weight: bolder;
+ }
+
+ .started {
+  border-radius: 20px;  
+  border-radius: 40px  rgb(25, 75, 238);
+  background-color: rgb(46, 25, 240);
+  color: white;  
+  font-size: 5.5px;
+  font-weight: 600;
+  padding: 5px;  
+  right: 50%;     
+  width: 50px;  
+
  }
 
  .content .list-menu li a {
@@ -70,7 +87,7 @@
   /*  primeira seção*/
   .first-section {
     height: 50vh;
-    background-color: rgb(112, 168, 233);
+    background-color: rgb(237, 241, 245);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,15 +100,15 @@
    }
 
  .conteudo-principal {
-  display: flex;
-  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.555);  
   align-items: center;
-  justify-content: space-between;
-  gap: 15px;
+  
+  line-height: 2rem;
 
  } 
 
  /* Planos */
+ 
 
  .planos {  
   display: grid;
@@ -99,25 +116,292 @@
   gap: 10px;
   border-radius: 20px;
   margin-right: 10px;
+ 
 
  }
 
-.tipos-de-planos { 
+.tipos-planos { 
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-right: 10px;
-
+  justify-content: space-around;
+  font-weight: normal;
+  background-color: rgb(245, 235, 235);
+  background-image: linear-gradient(to bottom, rgb(241, 241, 247), rgb(12, 128, 223));  
 }
 
-.primeiro-plano {
-  border-radius: 20px;
+.plano-1 {  
+  width: 75px;
+  height: 85px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px; 
+  line-height: 2rem;
+  background-color: rgba(255, 255, 255, 0.555);
  
+}
+
+.plano-1 .info .top-menu {  
+  font-size: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1px;  
+  padding-left: 10px;   
+}
+
+
+.plano-1 .info .top-menu h3  {
+  font-size: 7px ;
+  font: 300;
+  font-weight: bolder;
+  color: black;
+}
+
+
+.plano-1 .info .top-menu h4 {
+  font-size: 6px ;
+  font: 200;
+  font-weight: lighter;
+}
+
+
+.plano-1 .info .bottom-menu {  
+  font-size: 5px;
+  padding: 1px;  
+  padding-left: 10px;
+  font-weight: lighter;
+}
+
+.plano-1 .info .bottom-menu h3 {
+  font-size: 7px ;
+  font: 200;
+  font-weight: lighter;
+}
+
+.plano-1 .info .bottom-menu h4 {
+  font-size: 5px ;
+  font: 200;
+  font-weight: lighter;
   
+}
+
+
+.plano-1 .info .top-menu .pedir{
+  border-radius: 20px;  
+  border-radius: 40px  rgb(25, 75, 238);
+  background-color: rgb(46, 25, 240);
+  color: white;  
+  font-size: 5.5px;
+  font-weight: 600;
+  padding: 5px;  
+  right: 50%;     
+  width: 50px;   
+  
+}
+
+
+
+
+/*plano 2 */
+
+.plano-2 {  
+  width: 75px;
+  height: 85px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px; 
+  line-height: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.555);
+ 
+}
+
+
+.plano-2 .info .top-menu {  
+  font-size: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1px;  
+  padding-left: 10px; 
+  
+}
+
+.plano-2 .info .top-menu h3  {
+  font-size: 10px ;
+  font: 200;
+  font-weight: bolder;
+  color: rgb(4, 138, 4);
 
 }
+
+.plano-2 .info .top-menu h4 {
+  font-size: 6px ;
+  font: 200;
+  font-weight: lighter;
+}
+
+
+.plano-2 .info .bottom-menu {  
+  font-size: 5px;
+  padding: 1px;  
+  padding-left: 10px;
+  font-weight: lighter;
+}
+
+.plano-2 .info .bottom-menu h3 {
+  font-size: 6px ;
+  font: 200;
+  font-weight: lighter;
+}
+
+.plano-2 .info .bottom-menu h4 {
+  font-size: 5px ;
+  font: 200;
+  font-weight: lighter;
+  
+}
+
+.plano-2 .info .top-menu .pedir{
+  border-radius: 20px;  
+  border-radius: 40px  rgb(25, 75, 238);
+  background-color: rgb(156, 15, 221);
+  color: white;  
+  font-size: 5.5px;
+  font-weight: 600;
+  padding: 5px;  
+  right: 50%;     
+  width: 50px;  
+}
+
+/* plano 3*/
+
+.plano-3 {  
+  width: 75px;
+  height: 85px;
+  border: 1px solid rgb(255, 255, 255);;
+  border-radius: 5px; 
+  line-height: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.555);
+}
+
+
+.plano-3 .info .top-menu {  
+  font-size: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1px;  
+  padding-left: 10px; 
+  
+}
+
+.plano-3 .info .top-menu h3  {
+  font-size: 10px ;
+  font: 200;
+  font-weight: bolder;
+  color: rgb(35, 20, 240);
+
+}
+
+.plano-3 .info .top-menu h4 {
+  font-size: 6px ;
+  font: 200;
+  font-weight: lighter;
+}
+
+
+.plano-3 .info .bottom-menu {  
+  font-size: 5px;
+  padding: 1px;  
+  padding-left: 10px;
+  font-weight: lighter;
+}
+
+.plano-3 .info .bottom-menu h3 {
+  font-size: 6px ;
+  font: 200;
+  font-weight: lighter;
+}
+
+.plano-3 .info .bottom-menu h4 {
+  font-size: 5px ;
+  font: 200;
+  font-weight: lighter;
+  
+}
+
+.plano-3 .info .top-menu .pedir{
+  border-radius: 20px;  
+  border-radius: 40px  rgb(25, 75, 238);
+  background-color: rgb(156, 15, 221);
+  color: white;  
+  font-size: 5.5px;
+  font-weight: 600;
+  padding: 5px;  
+  right: 50%;     
+  width: 50px;  
+}
+
+/*plano 4 */
+
+.plano-4 {  
+  width: 75px;
+  height: 85px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px; 
+  line-height: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.555);
+}
+
+
+.plano-4 .info .top-menu {  
+  font-size: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1px;  
+  padding-left: 10px; 
+  
+}
+
+.plano-4 .info .top-menu h3  {
+  font-size: 10px ;
+  font: 200;
+  font-weight: bolder;
+  color: rgb(152, 22, 238);
+  
+}
+
+.plano-4 .info .top-menu h4 {
+  font-size: 6px ;
+  font: 200;
+  font-weight: lighter;
+}
+
+
+.plano-4 .info .bottom-menu {  
+  font-size: 5px;
+  padding: 1px;  
+  padding-left: 10px;
+  font-weight: lighter;
+}
+
+.plano-4 .info .bottom-menu h3 {
+  font-size: 6px ;
+  font: 200;
+  font-weight: lighter;
+}
+
+.plano-4 .info .bottom-menu h4 {
+  font-size: 5px ;
+  font: 200;
+  font-weight: lighter;  
+}
+
+
+.plano-4 .info .top-menu .pedir{   
+  border-radius: 20px;  
+  border-radius: 40px  rgb(25, 75, 238);
+  background-color: rgb(156, 15, 221);
+  color: white;  
+  font-size: 5.5px;
+  font-weight: 600;
+  padding: 5px;  
+  right: 50%;     
+  width: 50px;  
+}
+
+
+
 
 
 
